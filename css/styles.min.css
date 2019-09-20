@@ -1303,7 +1303,7 @@ textarea.error::-webkit-input-placeholder {
 
 @media (max-width:560px) {
 	#my-botui-app {
-		/*display: none;*/
+		display: none;
 	}
     .card-started {
         height: 480px
