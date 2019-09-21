@@ -10402,3 +10402,7 @@ screen and (max-height:300px) {
     justify-content: space-around;
     width: 50%;
 }
+
+.link-text a {
+    color: red;
+}
