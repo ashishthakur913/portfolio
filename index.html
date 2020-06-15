@@ -1,784 +1,327 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!-- Copied from https://beshley.com/vcard/index.html by Cyotek WebCopy 1.7.0.600, Saturday, September 7, 2019, 7:19:38 AM -->
-<head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125314689-2"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125314689-2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-	gtag('config', 'UA-125314689-2');
-	</script>
-	
-	<!--
-		Basic
-	-->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-	<title>Ashish Kanwar | Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="Hello! I’m Ashish.">
-	<meta name="keywords" content="Ashish Kanwar, Portfolio, Ex-Zomato, Art of Where">
-	<meta name="author" content="beshleyua">
-	
-	<!--
-		Load Fonts
-	-->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/styles.min.css">
-	<link rel="stylesheet" href="css/template-colors/green.css">
-	<link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css">
-	<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	
-	<!--
-		Favicons
-	-->
-	<link rel="shortcut icon" href="images/favicons/favicon.ico">
-	
-</head>
+        gtag('config', 'UA-125314689-2');
+        </script>
+        
+        <!--
+            Basic
+        -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <title>Ashish Kanwar | Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Hello! I’m Ashish.">
+        <meta name="keywords" content="Ashish Kanwar, Portfolio, Ex-Zomato, Art of Where">
+        <meta name="author" content="beshleyua">
 
-<body>
-	<div class="page">
-		
-		<!-- preloader -->
-		<div class="preloader">
-			<div class="centrize full-width">
-				<div class="vertical-center">
-					<div class="spinner">
-						<div class="double-bounce1"></div>
-						<div class="double-bounce2"></div>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<!--
-			Container
-		-->
-		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- FAV AND ICONS   -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="assets/images/apple-icon.png">
+        <link rel="shortcut icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+        <link rel="shortcut icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+        <!-- Google Font-->
+        <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+        <!-- Animate CSS-->
+        <link rel="stylesheet" href="assets/plugins/css/animate.css">
 
-			<!--
-				Header
-			-->
-			<header class="header">
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
 
-				<!-- menu -->
-				<div class="top-menu">
-					<ul>
-						<li class="active">
-							<a href="#about-card">
-								<span class="icon ion-person"></span>
-								<span class="link">About</span>
-							</a>
-						</li>
-						<li>
-							<a href="#resume-card">
-								<span class="icon ion-android-list"></span>
-								<span class="link">Resume</span>
-							</a>
-						</li>
-						<li>
-							<a href="#works-card">
-								<span class="icon ion-paintbrush"></span>
-								<span class="link">Works</span>
-							</a>
-						</li>
-						<li>
-							<a href="#contacts-card">
-								<span class="icon ion-at"></span>
-								<span class="link">Contact</span>
-							</a>
-						</li>
-					</ul>
-				</div>
+        <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css">
+    </head>
+    <body class="white-vertion black-bg">
+        <!-- Start Loader -->
+        <div class="section-loader">
+            <div class="loader">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- End Loader -->
+        <!--
+            ===================
+               NAVIGATION
+            ===================
+            -->
+        <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg mh-nav nav-btn">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#mh-home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-work">Experiences</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-education">Education</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--
+            ===================
+                HOME 
+            ===================
+            -->
+        <section class="mh-home" id="mh-home">
+            <div class="home-ovimg">
+                <div class="container">
+                    <div class="row section-separator vertical-middle-content home-padding">
+                        <div class="col-sm-6">
+                            <div class="mh-header-info">
+                                <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Ashish Kanwar</h2>
+                                <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Software Engineer</h4>
+                                <div class="hero-details">
+                                    <ul>
+                                        <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i class="fa fa-envelope"></i><a href="mailto:">ashishthakur913@gmail.com</a></li>
+                                        <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i class="fa fa-phone"></i><a href="callto:">+1 514 546 3111</a></li>
+                                        <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                                            <i class="fa fa-map-marker"></i>
+                                            <address>Montreal, Canada</address>
+                                        </li>
+                                    </ul>
+                                    <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                        <li><a href="https://www.facebook.com/ashishthakur913"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://github.com/ashishthakur913"><i class="fa fa-github"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="hero-info">
+                                <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                                    <div class="img-border">
+                                        <img src="assets/images/hero.jpg" alt=""  class="img-fluid">
+                                    </div>
+                                </div>
+                                <div id="my-botui-app">
+                                    <bot-ui></bot-ui>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+            ==================
+                ABOUT
+            =================
+            -->
+        <section class="mh-about" id="mh-about">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-about-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                            <img src="assets/images/programmer.gif" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-about-inner">
+                            <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">About Me</h2>
+                            <span class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                Hello, I’m Ashish, a software engineer based in Montreal. <br> 
+                                I love building new things from scratch and that is what I have been doing professionally for over 4 years. I am a tinkerer (DIY crafts, remote cars, LEGO) and that has always made me believe that I can build anything I desire. I am very passionate about writing code and bringing life-changing products to life. I am an outdoor person and I enjoy riding a bike or skiing downhill during winter. <br><br><b>Also, I am good at</b>
+                            </span>
+                            <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                <ul>
+                                    <li><span>JavaScript (ES6+)</span></li>
+                                    <li><span>React Redux</span></li>
+                                    <li><span>Typescript</span></li>
+                                    <li><span>Golang</span></li>
+                                    <li><span>PHP</span></li>
+                                    <li><span>SQL/NoSQL</span></li>
+                                    <li><span>HTML & (S)CSS</span></li>
+                                    <li><span>Continuous Integration</span></li>
+                                    <li><span>UI/UX</span></li>
+                                    <li><span>Containerization</span></li>
+                                    <li><span>Agile</span></li>
+                                    <li><span>Linux/Ubuntu</span></li>
+                                </ul>
+                            </div>
+                            <a href="./KANWAR_RESUME.pdf" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">Downlaod CV <i class="fa fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mh-work" id="mh-work">
+            <div class="container">
+                <div class="row section-separator-small">
+                    <div class="col-sm-7">
+                        <img src="assets/images/aow-logo.svg" alt=""  class="img-fluid company-logo">
+                        <a href="https://artfabrics.com/" target="_blank">
+                            <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">Art of Where</h2>
+                            <h6 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">October 2018 - current</h6>
+                        </a>
+                        <p>"Art of Where is an on-demand manufacturer of clothing and printed products specializing in drop shipping for art-based businesses"</p>
+                        <h5 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">We're a small team of 4 developers. We build and maintain software which manages everything from the online shop where you can go and design your own custom products to the production line where we manufacture and ship products.</h5>
+                        <h6 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">I recently helped build a new product, <a href="https://artfabrics.com/" target="_blank">Art Fabrics</a>, where you can design and order fabrics online. You can check it out <a href="https://artfabrics.com/" target="_blank">here</a>.</h5>
+                        <span>Technologies used</span>
+                        <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <ul>
+                                <li><span>React Redux</span></li>
+                                <li><span>PHP</span></li>
+                                <li><span>SQL</span></li>
+                                <li><span>WebGL</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <img src="assets/images/af-lab.gif" alt=""  class="img-fluid">
+                    </div>
+                </div>
+                <div class="row section-separator-small">
+                    <div class="col-sm-7">
+                        <img src="assets/images/Classo.live.png" alt=""  class="img-fluid company-logo">
+                        <a href="https://classo.live/" target="_blank">
+                            <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">Classo</h2>
+                            <h6 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">Feburary 2020 - current</h6>
+                        </a>
+                        <p>"Given this situation (COVID 19) we want to create an online platform which enables individual instructors to apply their trade online. Classo helps individual instructors take their lessons online using a Zoom integration and also manages payments for them."</p>
+                        <h5 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">I am working on this project along with the most hard working people I've met in my profession to date. This product is still in early stages where we're trying to get early feedback from users by making quick iterations.</h5>
+                        <h6 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">An MVP of the product can be found <a href="https://classo.live/" target="_blank">here</a>.</h5>
+                        <span>Technologies used</span>
+                        <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <ul>
+                                <li><span>React Redux</span></li>
+                                <li><span>Golang</span></li>
+                                <li><span>SQL</span></li>
+                                <li><span>AWS</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <img src="assets/images/classo-banner.png" alt=""  class="img-fluid">
+                    </div>
+                </div>
+                <div class="row section-separator-small">
+                    <div class="col-sm-7">
+                        <img src="assets/images/zomato-logo.webp" alt=""  class="img-fluid company-logo">
+                        <a href="https://zomato.com/" target="_blank">
+                            <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">Zomato</h2>
+                            <h6 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">October 2015 - August 2018</h6>
+                        </a>
+                        <p>"Zomato is an Indian restaurant aggregator and food delivery start-up. Zomato provides information, menus, and user-reviews of restaurants, and also has food delivery options from partner restaurants."</p>
+                        <h5 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">During my stint at Zomato, I worked on various projects. My favorite one being <b>Zomato Gold</b>. I was one of the founding team members of Gold and it was an instant success after the launch.</h5>
+                        <h6 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">Besides Gold, the projects I worked on include making Google AMP for Zomato mobile web, building Progressive Web App (react) for mobile web, shipping features live for web and mobile apps.</h5>
+                        <span>Technologies used</span>
+                        <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <ul>
+                                <li><span>JavaScript (ES6+)</span></li>
+                                <li><span>React Redux</span></li>
+                                <li><span>PHP</span></li>
+                                <li><span>SQL/NoSQL</span></li>
+                                <li><span>Continuous Integration</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="banner" data-height="400" data-width="100%" data-slide-speed="900" data-autoslide="5000">
+                            <img src="assets/images/z_gold.jpg" class="slider">
+                            <img src="assets/images/zomato-web.png" class="slider">
 
-			</header>
+                            <div class="previous" data-previous-cursor="assets/images/left.png"></div>
+                            <div class="next" data-next-cursor="assets/images/right.png"></div>
 
-			<!--
-				Card - Started
-			-->
-			<div class="card-started" id="home-card">
+                            <div class="links">
+                                <a href="1"></a>
+                                <a href="2"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<!--
-					Profile
-				-->
-				<div class="profile">
-					<!-- profile image -->
-					<div class="slide" style="background-image: url(images/bg.png);">
-						<div id="my-botui-app">
-							<bot-ui></bot-ui>
-						</div>
-					</div>
-					<div class="details">
-						<!-- profile photo -->
-						<div class="image">
-							<img src="images/profile.jpg" alt="">
-						</div>
+        <section class="mh-work" id="mh-education">
+            <div class="bolor-overlay">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-sm-12">
+                            <div class="mh-education">
+                                <h3 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Education</h3>
+                                <div class="mh-education-deatils">
+                                    <div class="row">
+                                        <!-- Education Institutes-->
+                                        <div class="col-sm-6">
+                                            <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                                <h4>Masters in Software Engineering From</h4>
+                                                <h6><a href="#">Concordia University, Canada</a></h6>
+                                                <div class="mh-eduyear">2018-2020</div>
+                                            </div>
+                                        </div>
+                                        <!-- Education Institutes-->
+                                        <div class="col-sm-6">
+                                            <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                                <h4>Bachelor of Technology From</h4>
+                                                <h6><a href="#">Punjab Technical University, India</a></h6>
+                                                <div class="mh-eduyear">2011-2015</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+            ==============
+            * JS Files *
+            ==============
+            -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- jQuery -->
+        <script src="assets/plugins/js/jquery.min.js"></script>
+        <!-- bootstrap -->
+        <script src="assets/plugins/js/bootstrap.min.js"></script>
 
-						<!-- profile titles -->
-						<div class="title">Ashish Kanwar</div>
-						<h1>
-							<a href="" class="subtitle typewrite" data-period="2000" data-type='[ "I Love to Develop.", "I am Creative.", "I Love Design."]'>
-								<span class="wrap"></span>
-							</a>
-						</h1>
+        <!-- wow -->
+        <script src="assets/plugins/js/wow.min.js"></script>
 
-						<!-- profile socials -->
-						<div class="social">
-							<a target="_blank" href="https://www.linkedin.com/in/ashish-kumar-kanwar/"><span class="fab fa-linkedin"></span></a>
-							<a target="_blank" href="https://github.com/ashishthakur913"><span class="fab fa-github"></span></a>
-							<a target="_blank" href="https://www.facebook.com/ashishthakur913"><span class="fab fa-facebook"></span></a>
-						</div>
-					</div>
-					
-					<!-- profile buttons -->
-					<div class="lnks">
-						<a href="./KANWAR_RESUME.pdf" download target="_blank" class="lnk">
-							<span class="text">Download CV</span>
-							<span class="ion ion-archive"></span>
-						</a>
-						<a href="#" class="lnk discover">
-							<span class="text">Contact Me</span>
-							<span class="arrow"></span>
-						</a>
-					</div>
+        <!-- jquery nav -->
+        <script src="assets/plugins/js/jquery.nav.js"></script>
+        <!-- Fancybox js-->
+        <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
 
-				</div>
-
-			</div>
-			<div class="card-inner animated active" id="about-card">
-				<div class="card-wrap">
-					<div class="content about">
-					    <div class="title"><span class="first-word">About</span> Me</div>
-					    <div class="row">
-					        <div class="col col-d-6 col-t-12 col-m-12 border-line-v">
-					            <div class="text-box">
-					                <p><strong>Hello! I’m Ashish.</strong>
-					                 <br>Full stack developer, technocrat and a product manager from Montreal, Canada. I have traveled a long journey building the internets. Have a cool idea? Hit me up, let's build it together!</p>
-					            </div>
-					        </div>
-					        <div class="col col-d-6 col-t-12 col-m-12 border-line-v">
-					            <div class="info-list">
-					                <ul>
-					                    <li><strong>Age:</strong> 26</li>
-					                    <li><strong>Freelance:</strong> Available</li>
-					                    <li><strong>Location:</strong> Montreal, Canada</li>
-					                </ul>
-					            </div>
-					        </div>
-					        <div class="clear"></div>
-					    </div>
-					</div>
-
-					<!--
-						Testimonials
-					-->
-					<div class="content testimonials">
-
-						<!-- title -->
-						<div class="title">Testimonials</div>
-
-						<!-- content -->
-						<div class="row testimonials-items">
-
-							<!-- client item -->
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-								<div class="revs-carousel default-revs">
-									<div class="owl-carousel">
-										<div class="item">
-											<div class="revs-item">
-												<div class="text">
-													He is always very enthused about the work he does and does everything with the same kind of ownership. I've worked with him on multiple projects and it's been great to see him excited about everything he does. He is eager to learn and never backs down to take up new stuff. It's great to see him pick up new things quickly.
-												</div>
-												<div class="user">
-													<div class="img"><img src="images/man1.jpg" alt=""></div>
-													<div class="info">
-														<div class="name">Udit Gupta</div>
-														<div class="company">Project Manager, Zomato</div>
-													</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="revs-item">
-												<div class="text">
-													Working with you was a blissful experience. Your passion to learn and not stop unless you find the right and best solution is the best thing in you. Your this attitude pushed me as well to push my limits and search for the best solution to a problem. You are an asset to Zomato and your hard work has always helped it.
-												</div>
-												<div class="user">
-													<div class="img"><img src="images/man1.jpg" alt=""></div>
-													<div class="info">
-														<div class="name">Garvit Khatri</div>
-														<div class="company">Software Engineer, Zomato</div>
-													</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="revs-item">
-												<div class="text">
-													Ashish induces a competitive environment that motivates people to achieve higher. He has always displayed an ability to learn rapidly and adapt quickly the need of the hour.
-												</div>
-												<div class="user">
-													<div class="img"><img src="images/man1.jpg" alt=""></div>
-													<div class="info">
-														<div class="name">Gabriel Jean</div>
-														<div class="company">CTO, Art of Where</div>
-													</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!--
-				Card - Resume
-			-->
-			<div class="card-inner" id="resume-card">
-				<div class="card-wrap">
-
-					<!--
-						Resume
-					-->
-					<div class="content resume">
-
-						<!-- title -->
-						<div class="title">Resume</div>
-
-						<!-- content -->
-						<div class="row">
-
-							<!-- experience -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="resume-title border-line-h">
-									<div class="icon"><i class="ion ion-briefcase"></i></div>
-									<div class="name">Experience</div>
-								</div>
-								<div class="resume-items">
-									<div class="resume-item border-line-h active">
-										<div class="date">2018 - Present</div>
-										<div class="name">Software Engineer</div>
-										<div class="company"><a target="_blank" href="https://artofwhere.com/">Art of Where, Montreal</a></div>
-										<p>
-											Develop and maintain the software that manages the entire manufacturing process @ Art of Where.
-										</p>
-									</div>
-									<div class="resume-item border-line-h active">
-										<div class="date">2015 - 2018</div>
-										<div class="name">Software Engineer</div>
-										<div class="company"><a target="_blank" href="https://zomato.com/">Zomato, India</a></div>
-										<p>
-											Worked on various consumer-facing products across different tech stacks. Was actively involved in product management as well as tech decisions.
-										</p>
-									</div>
-									<div class="resume-item">
-										<div class="date">2014 - 2015</div>
-										<div class="name">Intern</div>
-										<div class="company">Click labs.</div>
-										<p>
-											Worked on an e-commerce platform, shipped minor features live.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<!-- education -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="resume-title border-line-h">
-									<div class="icon"><i class="ion ion-university"></i></div>
-									<div class="name">Education</div>
-								</div>
-								<div class="resume-items">
-									<div class="resume-item border-line-h active">
-										<div class="date">2018 - 2020</div>
-										<div class="name">Masters in Computer Science</div>
-										<div class="company">Montreal, Canada</div>
-										<p>
-											Currently doing Master's from Concordia University, Montreal
-										</p>
-									</div>
-									<div class="resume-item border-line-h">
-										<div class="date">2011 - 2015</div>
-										<div class="name">Bachelor of Technology</div>
-										<div class="company">PTU, India</div>
-										<p>
-											Bachelor's Degree in Computer Science PTU, India
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-					<!--
-						Skills
-					-->
-					<div class="content skills">
-
-						<!-- title -->
-						<div class="title">My Skills</div>
-
-						<!-- content -->
-						<div class="row">
-
-							<!-- skill item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="skills-list">
-									<div class="skill-title border-line-h">
-										<div class="icon"><i class="ion ion-easel"></i></div>
-										<div class="name">Front-end</div>
-									</div>
-									<ul>
-										<li class="border-line-h"> 
-											<div class="name">React, React Native</div>
-											<div class="progress">
-												<div class="percentage" style="width:90%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h"> 
-											<div class="name">Redux</div>
-											<div class="progress">
-												<div class="percentage" style="width:90%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h"> 
-											<div class="name">Javascript/JQuery</div>
-											<div class="progress">
-												<div class="percentage" style="width:95%;"></div>
-											</div>
-										</li>
-										<li>
-											<div class="name">Typescript</div>
-											<div class="progress">
-												<div class="percentage" style="width:85%;"></div>
-											</div>
-										</li>
-										<li>
-											<div class="name">ImmutableJS</div>
-											<div class="progress">
-												<div class="percentage" style="width:85%;"></div>
-											</div>
-										</li>
-										<li>
-											<div class="name">UI/UX, HTML/CSS</div>
-											<div class="progress">
-												<div class="percentage" style="width:95%;"></div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- skill item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="skills-list">
-									<div class="skill-title border-line-h">
-										<div class="icon"><i class="ion ion-code"></i></div>
-										<div class="name">Back-end</div>
-									</div>
-									<ul>
-										<li class="border-line-h"> 
-											<div class="name">PHP</div>
-											<div class="progress">
-												<div class="percentage" style="width:95%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h"> 
-											<div class="name">Golang</div>
-											<div class="progress">
-												<div class="percentage" style="width:75%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h"> 
-											<div class="name">SQL</div>
-											<div class="progress">
-												<div class="percentage" style="width:90%;"></div>
-											</div>
-										</li>
-										<li>
-											<div class="name">Java</div>
-											<div class="progress">
-												<div class="percentage" style="width:70%;"></div>
-											</div>
-										</li>
-										<li>
-											<div class="name">Redis</div>
-											<div class="progress">
-												<div class="percentage" style="width:90%;"></div>
-											</div>
-										</li>
-										<li>
-											<div class="name">Elasticsearch</div>
-											<div class="progress">
-												<div class="percentage" style="width:65%;"></div>
-											</div>
-										</li>
-										<li>
-											<div class="name">Cassandra</div>
-											<div class="progress">
-												<div class="percentage" style="width:60%;"></div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!--
-				Card - Works
-			-->
-			<div class="card-inner" id="works-card">
-				<div class="card-wrap">
-
-					<!--
-						Works
-					-->
-					<div class="content works">
-
-						<!-- title -->
-						<div class="title">Recent Works</div>
-
-						<!-- filters -->
-						<div class="filter-menu filter-button-group">
-							<div class="f_btn active">
-								<label><input type="radio" name="fl_radio" value="grid-item">All</label>
-							</div>
-							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="zomato">Zomato</label>
-							</div>
-							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="aow">Art of Where</label>
-							</div>
-						</div>
-
-						<!-- content -->
-						<div class="row grid-items border-line-v">
-
-							<!-- work item design -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item zomato border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-1" class="has-popup-media">
-											<img src="images/works/z_gold.jpg" alt="">
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-1" class="name has-popup-media">Zomato Gold</a>
-										<div class="category">App</div>
-									</div>
-									<div id="popup-1" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="images/works/z_gold.jpg" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Zomato Gold</h1>						
-													<div class="blog-detail">App</div>
-													<div class="blog-content">
-														<blockquote>
-															A Gold membership lets you get a 1+1 on food or 2+2 on drinks across thousands of restaurants in various countries across the world.
-														</blockquote>
-														<p>
-															I worked as one of the founding members of Zomato Gold. It was an instant success in India. It continues to be one of the favorite membership programs of foodies around the world!
-														</p>
-													</div>
-													<a target="_blank" href="https://play.google.com/store/apps/details?id=com.application.zomato&hl=en_CA" class="button">
-														<span class="text">View Project</span>
-														<span class="arrow"></span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item zomato border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-2" class="has-popup-media">
-											<img src="images/works/z_pwa.png" alt="">
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-2" class="name has-popup-media">Zomato Mobile</a>
-										<div class="category">Progressive Web App</div>
-									</div>
-									<div id="popup-2" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="images/works/z_pwa.png" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Zomato Mobile</h1>						
-													<div class="blog-detail">Progressive Web App</div>
-													<div class="blog-content">
-														<blockquote>
-															Zomato's mobile website
-														</blockquote>
-														<p>
-															Used React + Redux and rewrote Zomato's entire mobile web in a small team of 5 people.
-														</p>
-													</div>
-													<a target="_blank" href="https://www.zomato.com" class="button">
-														<span class="text">View Project</span>
-														<span class="arrow"></span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item zomato border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-5" class="has-popup-media">
-											<img src="images/works/z_amp.png" alt="">
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-5" class="name has-popup-media">Zomato's AMP</a>
-										<div class="category">Google's Accelerated Mobile Pages</div>
-									</div>
-									<div id="popup-5" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="images/works/z_amp.png" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Zomato's AMP</h1>						
-													<div class="blog-detail">Google's Accelerated Mobile Pages</div>
-													<div class="blog-content">
-														<blockquote>
-															AMP is a web component framework that you can use to easily create user-first websites, stories, emails, and ads.
-														</blockquote>
-														<p>
-															I with one more team member implemented the first version of Google's AMP for Zomato. It got featured on <span class="link-text" ><a target="_blank"  href="https://india.googleblog.com/2016/10/celebrating-amp-year-in-review.html"> Google's blog </a></span>.
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item aow border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-3" class="has-popup-media">
-											<img src="images/works/af.png" alt="">
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-3" class="name has-popup-media">Art Fabrics</a>
-										<div class="category">Website</div>
-									</div>
-									<div id="popup-3" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="images/works/af.png" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Art Fabrics</h1>						
-													<div class="blog-detail">Website</div>
-													<div class="blog-content">
-														<blockquote>
-															Art of Where's new business. Users can create new creative patterns using an easy to use tool. Those patterns can be printed on fabrics. Launching soon.
-														</blockquote>
-														<p>
-															My contribution was building user's account section of the website. This project was made in React + Redux + ImmutableJS + Typescript. 
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item zomato border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-4" class="has-popup-media">
-											<img src="images/works/gps-location.svg" alt="">
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-4" class="name has-popup-media">Find, Indoor Positioning</a>
-										<div class="category">Service</div>
-									</div>
-									<div id="popup-4" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="images/works/gps-location.svg" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Indoor Positioning</h1>						
-													<div class="blog-detail">Service</div>
-													<div class="blog-content">
-														<blockquote>
-															GPS works very poorly indoors. Find was used to locate users indoors to give location based recommendations and much more. 
-														</blockquote>
-														<p>
-															This was a pilot project launched in New Delhi, India. Naive Bayes Classifier was used to classify the WiFi fingerprints to locate the users indoors.
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item aow border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-6" class="has-popup-media">
-											<img src="images/works/aow.png" alt="">
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-6" class="name has-popup-media">Art Of Where</a>
-										<div class="category">Website</div>
-									</div>
-									<div id="popup-6" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="images/works/aow.png" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Art Of Where</h1>						
-													<div class="blog-detail">Website</div>
-													<div class="blog-content">
-														<blockquote>
-															Art of Where's website. You can drop ship and order wholesale printed products. Create branded t-shirts,leggings, notebooks, scarves, bags and more made on demand.
-														</blockquote>
-														<p>
-															I work with a small team of 4 people at the startup and we actively develop and manage the website + the manufacturing process management software.
-														</p>
-													</div>
-													<a target="_blank" href="https://www.artofwhere.com" class="button">
-														<span class="text">View Project</span>
-														<span class="arrow"></span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!--
-				Card - Contacts
-			-->
-			<div class="card-inner contacts" id="contacts-card">
-				<div class="card-wrap">
-
-					<!--
-						Conacts Info
-					-->
-					<div class="content contacts">
-
-						<!-- title -->
-						<div class="title">My coordinates</div>
-
-						<!-- content -->
-						<div class="row">
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-								<div class="info-list">
-									<ul>
-										<li><strong>City</strong>Montreal, Canada</li>
-										<li><strong>Email</strong>ashishthakur913@gmail.com</li>
-										<li><strong>Phone</strong>+1 514 546 3111</li>
-									</ul>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>
-
-						<div class="title" style="margin-top: 30px;">Social</div>
-						<div class="row social-c">
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-								<div class="social">
-									<a target="_blank" href="https://www.linkedin.com/in/ashish-kumar-kanwar/"><span class="fab fa-linkedin"></span></a>
-									<a target="_blank" href="https://github.com/ashishthakur913"><span class="fab fa-github"></span></a>
-									<a target="_blank" href="https://www.facebook.com/ashishthakur913"><span class="fab fa-facebook"></span></a>
-								</div>
-							</div>
-						</div>						
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-	
-	<!--
-		jQuery Scripts
-	-->
-	<script src="js/scripts.min.js"></script>
-	<script src="js/chat-bot.js"></script>
-	<script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
-	<script src="https://unpkg.com/botui/build/botui.min.js"></script>
-</body>
-<!-- Copied from https://beshley.com/vcard/index.html by Cyotek WebCopy 1.7.0.600, Saturday, September 7, 2019, 7:19:38 AM -->
+        <script src="assets/js/custom-scripts.js"></script>
+        <script src="js/chat-bot.js"></script>
+        <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+        <script src="./js/botui.js"></script>
+        <script src="./js/slider.js"></script>
+    </body>
 </html>

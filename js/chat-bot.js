@@ -2,8 +2,9 @@ document.addEventListener('DOMContentLoaded', function(){
   var botui = new BotUI('my-botui-app') // id of container
 
   botui.message.bot({ // show first message
-    delay: 200,
-    content: 'Hi there 👋'
+    delay: 1000,
+    content: 'Hi there 👋',
+    className: 'hi-there'
   }).then(() => {
     return botui.message.bot({ // second one
       delay: 1000, // wait 1 sec.
