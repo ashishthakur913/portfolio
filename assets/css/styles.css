@@ -1080,14 +1080,11 @@ body {
     margin: 0 auto;
     float: none;
     text-align: center;
-    border: 0px;
-    border-radius: 50%; }
-.mh-home .img-border {
-  height: 100px;
-  width: 100px;
-  border: 7px solid rgba(0, 0, 0, 0.07);
-  margin: 0 auto;
-  border-radius: 50%; }
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 7px solid rgba(0, 0, 0, 0.07);
+  }
 
 .mh-featured-project-img img {
   width: inherit !important;
@@ -2710,4 +2707,10 @@ BLOG Pagination
 }
 .section-separator-small {
     padding: 50px 0;
+}
+img {
+  max-width: 100%;
+}
+.img-border {
+  width: 100px; 
 }
