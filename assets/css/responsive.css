@@ -500,9 +500,6 @@
   .text-left.text-xs-center {
     text-align: center !important; } }
 @media only screen and (max-width: 420px) {
-  .mh-home .img-border {
-    height: 80px;
-    width: 80px; }
 
     .hero-info {
       margin-top: 0;
@@ -518,11 +515,6 @@
     }
     .hero-social li{
 
-    }
-    .img-border {
-      height: 50px !important;
-      width: 50px !important;
-      border: 3px solid rgba(0, 0, 0, 0.07) !important;
     }
     #my-botui-app {
       max-height: 350px;
