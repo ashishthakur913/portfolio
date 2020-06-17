@@ -500,6 +500,9 @@
   .text-left.text-xs-center {
     text-align: center !important; } }
 @media only screen and (max-width: 420px) {
+    .home-ovimg {
+      min-height: 100vh;
+    }
 
     .hero-info {
       margin-top: 0;
