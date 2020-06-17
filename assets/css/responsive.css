@@ -510,7 +510,7 @@
     .hero-occuption {
       margin-bottom: 0 !important;
     }
-    .hero-details {
+    .hero-details .hidden-div {
       display: none !important;
     }
     .hero-social li{
@@ -518,10 +518,17 @@
     }
     #my-botui-app {
       max-height: 350px;
+      min-height: 290px;
     }
 
   .home-padding {
-    padding: 100px 0;
+    padding: 110px 0 100px;
+  }
+  .mh-home .mh-header-info h4 {
+      margin-bottom: 0px;
+  }
+  .mh-home .mh-header-info ul {
+      margin-top: 18px;
   }
 }
 
